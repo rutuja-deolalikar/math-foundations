@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
 \usepackage{amsmath, amssymb, amsthm}
+\usepackage[margin=1in]{geometry}
 
 \theoremstyle{definition}
 \newtheorem{theorem}{Theorem}
@@ -12,15 +12,15 @@
 \begin{document}
 \maketitle
 
-\section*{Problem 1: De Morgan's Law Proof}
+\section*{De Morgan's Law Proof}
 \begin{theorem}
-For any sets $A$ and $B$, $(A \cup B)^c = A^c \cap B^c$.
+    For any sets A and B, $(A \cup B)^c = A^c \cap B^c$.
 \end{theorem}
 
 \begin{proof}
-We show mutual inclusion $(A \cup B)^c \subseteq A^c \cap B^c$ and $A^c \cap B^c \subseteq (A \cup B)^c$.
-
+We show mutual inclusion $(A \cup B)^c \subseteq A^c \cap B^c and A^c \cap B^c \subseteq (A \cup B)^c$.
 Let $x \in (A \cup B)^c$ be arbitrary.
+
 \begin{align*}
     x \in (A \cup B)^c &\iff x \notin (A \cup B) \\
     &\iff \neg (x \in A \lor x \in B) \\
@@ -28,13 +28,8 @@ Let $x \in (A \cup B)^c$ be arbitrary.
     &\iff (x \in A^c) \land (x \in B^c) \\
     &\iff x \in (A^c \cap B^c)
 \end{align*}
+
 Since every logical equivalence step holds bi-directionally, $(A \cup B)^c = A^c \cap B^c$.
 \end{proof}
-
-\section*{Problem 2: Matrix \& Distributive Property}
-Let $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$. The Cartesian product property holds as follows:
-\begin{equation}
-    A \times (B \cap C) = (A \times B) \cap (A \times C)
-\end{equation}
 
 \end{document}

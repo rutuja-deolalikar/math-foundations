@@ -1,5 +1,32 @@
+## Core LaTeX auxiliary files
 *.aux
-*.log
-*.fls
+*.bbl
+*.bcf
+*.blg
 *.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.sbm
+*.sym
 *.synctex.gz
+*.synctex(busy)
+*.toc
+
+## Directory-based build artifacts
+/build/
+/out/
+
+## OS & Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
